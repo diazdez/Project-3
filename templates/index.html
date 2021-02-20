@@ -25,7 +25,10 @@
         <div class="jumbotron" style="text-align: center">
             <h1>*PROJECT 3: LOAN APPROVAL*</h1>
             <h2>---------------------------------------------------</h2>
-            <p>Find Out How Much MONEY YOU CAN GET APPROVED!!!! </p>
+			<p>Find Out How Much MONEY YOU CAN GET APPROVED!!!! </p>
+			{% for data in prediction_text %}
+			<p>{{ data }} </p>
+			{% endfor %}
         </div>
 
         <!-- <div class="row">
@@ -38,7 +41,7 @@
         
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="/action_page.php" >
+			<form class="contact100-form validate-form" action="/predict"  method="GET" role="form", name="loanform" >
 				<span class="contact100-form-title" style="font-size:32px">LOAN APPROVAL PREDICTION</span>
 				<span class="contact100-form-title" id="output" style="color: #23e45d;" >&nbsp;</span>
         
@@ -46,45 +49,100 @@
 
 				<div class="wrap-input100 " >
 					<span class="label-input100">Gender</span>
-					<select  class="input100" id="gender" name="gender" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+					<select  class="input100" id="Gender" name="Gender" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Select Gender</option>
-							<option value="0">Female</option>
-							<option value="1">Male</option>
+							<option value="Female">Female</option>
+							<option value="Male">Male</option>
 						</select>
 					<span class="focus-input100"></span>
 				</div>
                 
                 <div class="wrap-input100" style="border-bottom: 0px;" >
 					<span class="label-input100">Marital Status</span>
-						<select  class="input100" id="religion" name="religion" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+						<select  class="input100" id="Marital" name="Marital" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Married?</option>
-							<option value="0">No</option>
-							<option value="1">Yes</option> 
+							<option value="No">No</option>
+							<option value="Yes">Yes</option> 
 						</select>
 					<span class="focus-input100"></span>
 				</div>
-
-                <div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Education Status</span>
-						<select  class="input100" id="religion" name="religion" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
-							<option value="">Graduate?</option>
-							<option value="0">No</option>
-							<option value="1">Yes</option> 
-						</select>
-					<span class="focus-input100"></span>
-				</div>
-
                 <div class="wrap-input100" style="border-bottom: 0px;" >
 					<span class="label-input100">Dependents</span>
-						<select  class="input100" id="religion" name="religion" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+						<select  class="input100" id="Dependents" name="Dependents" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Select Number of Dependents</option>
-							<option value="0">1</option>
-							<option value="1">2</option>
-							<option value="2">3+</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3+">3+</option>
 						</select>
 					<span class="focus-input100"></span>
 				</div>
-
+                <div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Education Status</span>
+						<select  class="input100" id="Education" name="Education" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+							<option value="">Graduate?</option>
+							<option value="Not Graduate">No</option>
+							<option value="Graduate">Yes</option> 
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Self-Employed</span>
+						<select  class="input100" id="Employed" name="Employed" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+							<option value="">Self-Employed?</option>
+							<option value="No">No</option>
+							<option value="Yes">Yes</option> 
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="form-group">
+					<label for="Applicant">Applicant Income (monthly)</label>
+					<input type="text" class="form-control" id="Applicant" name="Applicant" placeholder="3000">
+				</div>
+				<div class="form-group">
+					<label for="Coapplicant">Coapplicant Income (monthly)</label>
+					<input type="text" class="form-control" id="Coapplicant" name="Coapplicant" placeholder="5000">
+				</div>
+				<div class="form-group">
+					<label for="Loan">Loan Amount (K)</label>
+					<input type="text" class="form-control" id="Loan" name="Loan" placeholder="100">
+				</div>
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Loan Term (Months)</span>
+						<select  class="input100" id="Term" name="Term" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+							<option value="">Select Loan Term (Months)</option>
+							<option value="36">36</option>
+							<option value="60">60</option>
+							<option value="84">84</option>
+							<option value="120">120</option>
+							<option value="180">120</option>
+							<option value="240">240</option>
+							<option value="300">300</option>
+							<option value="360">360</option>
+							<option value="480">480</option>
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Credit History</span>
+						<select  class="input100" id="Credit" name="Credit" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+							<option value="">Credit History?</option>
+							<option value="0">No</option>
+							<option value="1">Yes</option> 
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100" style="border-bottom: 0px;" >
+					<span class="label-input100">Property Area</span>
+						<select  class="input100" id="Property" name="Property" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+							<option value="">Property Area?</option>
+							<option value="Urban">Urban</option>
+							<option value="Semiurban">Semiurban</option> 
+							<option value="Rural">Rural</option>
+	
+						</select>
+					<span class="focus-input100"></span>
+				</div>
 
                 <div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
@@ -94,13 +152,13 @@
 				</div>
 			</form>
 
-
-
         </div>
     </div>
 </body>
 
 <!-- Footer -->
+
+
 
 <footer>
     <br>
@@ -108,6 +166,7 @@
         <p>© Copyright Bootcamp 2021</p></div>   
         <hr>
   </div>
+
   </footer>
            
 </footer>
