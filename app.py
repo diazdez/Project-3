@@ -74,7 +74,7 @@ def predict():
     'Loan_Amount_Term': [int(i9)],
     'Credit_History': [int(i10)],
     'Property_Area': i11})
-
+    
     result = loaded_model.predict(data)[0]
     li.append(result)
     return render_template("index.html",prediction_text=li[11])
