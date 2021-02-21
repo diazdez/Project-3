@@ -7,28 +7,57 @@
     <title>PROJECT THREE TEMPLATE</title>
 
 
-    
+	<link rel="stylesheet" href="../static/css/style.css" />
     <!-- bootstrap and css stylesheet link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="../static/css/bootstrap_pulse.min.css" />
     <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
 
 </head>
 
 
 <body>
-    <style type="text/css">
+    <!-- <style type="text/css">
         *{margin:0;padding:0;box-sizing:border-box}body,html{height:100%;font-family:Poppins-Regular,sans-serif}a{font-family:Poppins-Regular;font-size:14px;line-height:1.7;color:#666;margin:0;transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s;-moz-transition:all .4s}a:focus{outline:0!important}a:hover{text-decoration:none}h1,h2,h3,h4,h5,h6{margin:0}input{outline:0;border:none}input:focus::-webkit-input-placeholder{color:transparent}input:focus:-moz-placeholder{color:transparent}input:focus::-moz-placeholder{color:transparent}input:focus:-ms-input-placeholder{color:transparent}input::-webkit-input-placeholder{color:#adadad}input:-moz-placeholder{color:#adadad}input::-moz-placeholder{color:#adadad}input:-ms-input-placeholder{color:#adadad}button{outline:0!important;border:none;background:0 0}button:hover{cursor:pointer}.container{max-width:1200px}.container-contact100{width:100%;min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:15px;background:#bda7cf;background:-webkit-linear-gradient(33deg,#86918e,#8d9de4);background:-o-linear-gradient(33deg,#86918e,#8d9de4);background:-moz-linear-gradient(33deg,#86918e,#8d9de4);background:linear-gradient(33deg,#86918e,#8d9de4)}.wrap-contact100{width:500px;background:#fff;border-radius:10px;overflow:hidden;padding:42px 55px 45px 55px}.contact100-form{width:100%}.contact100-form-title{display:block;font-family:Poppins-Bold;font-size:39px;color:#333;line-height:1.2;text-align:center;padding-bottom:10px}.wrap-input100{width:100%;position:relative;border-bottom:2px solid #d9d9d9;padding-bottom:10px;margin-bottom:15px}.input100{display:block;width:100%;background:0 0;font-family:Poppins-Medium;font-size:18px;color:#333;line-height:1.2;padding:0 5px}.focus-input100{position:absolute;display:block;width:100%;height:100%;top:0;left:0;pointer-events:none}.focus-input100::before{content:"";display:block;position:absolute;bottom:-2px;left:0;width:0;height:2px;-webkit-transition:all .4s;-o-transition:all .4s;-moz-transition:all .4s;transition:all .4s;background:#7f7f7f}input.input100{height:40px}.input100:focus+.focus-input100::before{width:100%}.has-val.input100+.focus-input100::before{width:100%}.container-contact100-form-btn{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;flex-wrap:wrap;justify-content:center;padding-top:13px}.wrap-contact100-form-btn{width:100%;display:block;position:relative;z-index:1;border-radius:25px;overflow:hidden;margin:0 auto}.contact100-form-bgbtn{position:absolute;z-index:-1;width:300%;height:100%;background:#a64bf4;background:-webkit-linear-gradient(left,#596d6d,#c5bcf5,#596d6d,#c5bcf5);background:-o-linear-gradient(left,#596d6d,#c5bcf5,#596d6d,#c5bcf5);background:-moz-linear-gradient(left,#596d6d,#c5bcf5,#596d6d,#c5bcf5);background:linear-gradient(left,#596d6d,#c5bcf5,#596d6d,#c5bcf5);top:0;left:-100%;-webkit-transition:all .4s;-o-transition:all .4s;-moz-transition:all .4s;transition:all .4s}.contact100-form-btn{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;justify-content:center;align-items:center;padding:0 20px;width:100%;height:50px;font-family:Poppins-Medium;font-size:16px;color:#fff;line-height:1.2}.wrap-contact100-form-btn:hover .contact100-form-bgbtn{left:0}.contact100-form-btn i{-webkit-transition:all .4s;-o-transition:all .4s;-moz-transition:all .4s;transition:all .4s}.contact100-form-btn:hover i{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transform:translateX(10px);-o-transform:translateX(10px);transform:translateX(10px)}@media (max-width:576px){.wrap-contact100{padding:72px 15px 65px 15px}}.wrap-contact100{width:800px;background:#fff;border-radius:10px;overflow:hidden;padding:42px 55px 45px 55px}.contact100-form-title{font-size:26px}
-        </style>
-        
+        </style> -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<a class="navbar-brand" href="/">Loan Approval?</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarColor01">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="https://www.zillow.com/" target="_blank">Zillow
+					<span class="sr-only">(current)</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://www.economy.com/united-states/house-price-index" target="_blank">House Price Index</a>
+				</li>
+	
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Have a Try?</a>
+				  <div class="dropdown-menu">
+					<a class="dropdown-item" href="https://www.chase.com/personal/mortgage" target="_blank">Chase</a>
+					<a class="dropdown-item" href="https://www.bankofamerica.com/info-home-loans/purchase-search1/?subCampCode=41487&dmcode=18099595705&cm_mmc=CRE-SD1-_-Google-PS-_-ME4LT0000_property%20mortgage-_-PS_Google_NB_EX_Mort_DeskURLs__595705&gclid=CjwKCAiAg8OBBhA8EiwAlKw3kjwoxS3KiyQ4JpmmBRMdcFruFTq56E2cPIaYhVcTC1O1mu9uN-RNrBoCgbAQAvD_BwE" target="_blank">Bank of America</a>
+					<a class="dropdown-item" href="https://www.quickenloans.com/l/progpi?gclid=CjwKCAiAg8OBBhA8EiwAlKw3krwxY7lS_rju_gxQAegMUyU_f-U96MUFPXu7vN_60p9_YdF4aOyIChoCB2EQAvD_BwE&qls=GAW_LNREALLe.0000714273&ef_id=CjwKCAiAg8OBBhA8EiwAlKw3krwxY7lS_rju_gxQAegMUyU_f-U96MUFPXu7vN_60p9_YdF4aOyIChoCB2EQAvD_BwE:G:s&s_kwcid=AL!1083!3!43582788849!e!!g!!real%20estate%20loan&gclsrc=aw.ds" target="_blank">Quicken Loan</a>
+					<a class="dropdown-item" href="https://www.rocketmortgage.com/purchase/get-started" target="_blank">Rocket Mortgage</a>
+				  </div>
+				</li>
+			  </ul>
+
+			</div>
+		  </nav>
     <div class="container">
         <div class="jumbotron" style="text-align: center">
-            <h1>*PROJECT 3: LOAN APPROVAL*</h1>
-            <h2>---------------------------------------------------</h2>
-			<p>Find Out How Much MONEY YOU CAN GET APPROVED!!!! </p>
-			{% for data in prediction_text %}
-			<p>{{ data }} </p>
-			{% endfor %}
+            <h1>House Loan Approval?</h1>
+			<hr>
+			<div class="alert alert-dismissible alert-primary">
+			<h3>{{ prediction_text }} </h3>
+			<h4> {{loan_detail}}</h4>
+		</div>
         </div>
 
         <!-- <div class="row">
@@ -42,13 +71,13 @@
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form" action="/predict"  method="GET" role="form", name="loanform" >
-				<span class="contact100-form-title" style="font-size:32px">LOAN APPROVAL PREDICTION</span>
+				<!-- <span class="contact100-form-title" style="font-size:32px">Quick Test</span> -->
 				<span class="contact100-form-title" id="output" style="color: #23e45d;" >&nbsp;</span>
         
             
 
 				<div class="wrap-input100 " >
-					<span class="label-input100">Gender</span>
+					<span class="label-input100 middle"><h4>Gender</h4></span>
 					<select  class="input100" id="Gender" name="Gender" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Select Gender</option>
 							<option value="Female">Female</option>
@@ -58,7 +87,7 @@
 				</div>
                 
                 <div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Marital Status</span>
+					<span class="label-input100 middle"><h4>Marital Status</h4></span>
 						<select  class="input100" id="Marital" name="Marital" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Married?</option>
 							<option value="No">No</option>
@@ -67,7 +96,7 @@
 					<span class="focus-input100"></span>
 				</div>
                 <div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Dependents</span>
+					<span class="label-input100 middle"><h4>Dependents</h4></span>
 						<select  class="input100" id="Dependents" name="Dependents" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Select Number of Dependents</option>
 							<option value="0">0</option>
@@ -78,7 +107,7 @@
 					<span class="focus-input100"></span>
 				</div>
                 <div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Education Status</span>
+					<span class="label-input100 middle"><h4>Education Status</h4></span>
 						<select  class="input100" id="Education" name="Education" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Graduate?</option>
 							<option value="Not Graduate">No</option>
@@ -87,7 +116,7 @@
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Self-Employed</span>
+					<span class="label-input100 middle"><h4>Self-Employed</h4></span>
 						<select  class="input100" id="Employed" name="Employed" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Self-Employed?</option>
 							<option value="No">No</option>
@@ -95,20 +124,20 @@
 						</select>
 					<span class="focus-input100"></span>
 				</div>
-				<div class="form-group">
-					<label for="Applicant">Applicant Income (monthly)</label>
+				<div class="form-group middle">
+					<label for="Applicant"><h4>Applicant Income (Monthly)</h4></label>
 					<input type="text" class="form-control" id="Applicant" name="Applicant" placeholder="3000">
 				</div>
-				<div class="form-group">
-					<label for="Coapplicant">Coapplicant Income (monthly)</label>
+				<div class="form-group middle">
+					<label for="Coapplicant"><h4>Coapplicant Income (Monthly)</h4></label>
 					<input type="text" class="form-control" id="Coapplicant" name="Coapplicant" placeholder="5000">
 				</div>
-				<div class="form-group">
-					<label for="Loan">Loan Amount (K)</label>
+				<div class="form-group middle">
+					<label for="Loan" ><h4>Loan Amount (K)</h4></label>
 					<input type="text" class="form-control" id="Loan" name="Loan" placeholder="100">
 				</div>
 				<div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Loan Term (Months)</span>
+					<span class="label-input100 middle"><h4>Loan Term (Months)</h4></span>
 						<select  class="input100" id="Term" name="Term" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Select Loan Term (Months)</option>
 							<option value="36">36</option>
@@ -124,7 +153,7 @@
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Credit History</span>
+					<span class="label-input100 middle"><h4>Credit History</h4></span>
 						<select  class="input100" id="Credit" name="Credit" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Credit History?</option>
 							<option value="0">No</option>
@@ -133,7 +162,7 @@
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100" style="border-bottom: 0px;" >
-					<span class="label-input100">Property Area</span>
+					<span class="label-input100 middle"><h4>Property Area</h4></span>
 						<select  class="input100" id="Property" name="Property" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
 							<option value="">Property Area?</option>
 							<option value="Urban">Urban</option>
@@ -153,7 +182,16 @@
 			</form>
 
         </div>
-    </div>
+	</div>
+	
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>	
 </body>
 
 <!-- Footer -->
@@ -167,9 +205,9 @@
         <hr>
   </div>
 
-  </footer>
-           
 </footer>
+           
+
 
 
 </html>

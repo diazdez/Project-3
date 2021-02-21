@@ -28,7 +28,7 @@ def home():
 # route for PREDICTIONS
 @app.route("/predict", methods=['GET'])
 def predict():
-    li=[]
+    # li=[]
     i1=request.args.get('Gender')
     i2=request.args.get('Marital')
     i3=request.args.get('Dependents')
@@ -40,17 +40,17 @@ def predict():
     i9=request.args.get('Term')
     i10=request.args.get('Credit')
     i11=request.args.get('Property')
-    li.append(i1)
-    li.append(i2)
-    li.append(i3)
-    li.append(i4)
-    li.append(i5)
-    li.append(i6)
-    li.append(i7)
-    li.append(i8)
-    li.append(i9)
-    li.append(i10)
-    li.append(i11)
+    # li.append(i1)
+    # li.append(i2)
+    # li.append(i3)
+    # li.append(i4)
+    # li.append(i5)
+    # li.append(i6)
+    # li.append(i7)
+    # li.append(i8)
+    # li.append(i9)
+    # li.append(i10)
+    # li.append(i11)
     # data = pd.DataFrame.from_dict({'Gender': ['Male'],
     # 'Married': ['Yes'],
     # 'Dependents': ['2'],
@@ -76,8 +76,13 @@ def predict():
     'Property_Area': i11})
 
     result = loaded_model.predict(data)[0]
-    li.append(result)
-    return render_template("index.html",prediction_text=li[11])
+    if result == 'Y':
+        p='Nice! Your loan would be APPROVED!!!'
+    elif result == 'N':
+        p = 'Sorry, your loan request might be rejected!'
+    loan_detail= f'Loan amount: ${i8}K, Loan Term: {i9} months'
+
+    return render_template("index.html",prediction_text=p,loan_detail=loan_detail)
 
 if __name__ == "__main__":
     app.run()
