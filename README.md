@@ -4,7 +4,7 @@
 
 The goal of our project was to develop a classification machine learning model predicting a house loan approval. 
 
-In order to train our model, we obtained the data from [kaggle] (https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset). The dataset of approved and rejected loans included demographic information of applicants (gender, marital status, number of dependents, education) as well as some financial data (whether or not the applicant is self-employed, applicant and co-applicant income (monthly), loan amount (thousands), loan term (months), and presence of credit history).
+In order to train our model, we obtained the data from [kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset). The dataset of approved and rejected loans included demographic information of applicants (gender, marital status, number of dependents, education) as well as some financial data (whether or not the applicant is self-employed, applicant and co-applicant income (monthly), loan amount (thousands), loan term (months), and presence of credit history).
 
 Using **Tableau**, we analyzed trends and patterns in our data. The analysis provided us with important insights that we were mindful of while creating and training the model. Thus, from the training dataset analysis we learned that 
 * There were more approved loans in suburban, followed by urban and rural areas 
@@ -16,7 +16,7 @@ While developing a predictive classification model, we utilized **pipeline** met
 
 Finally, we developed a website where a user can input their demographic information and test whether or not the requested loan will be approved. We utilized **Flask** to deploy our model and **Heroku** to host the website.
 
-Check it out: [Website] (https://loan-predictions.herokuapp.com/)
+Check it out: [Website](https://loan-predictions.herokuapp.com/)
 
 #### **Dependencies**
 * Flask
