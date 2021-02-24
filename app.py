@@ -17,6 +17,7 @@ app = Flask(__name__)
 # filename = 'finalized_model.sav'
 # joblib.dump(rf, filename)
 filename = 'finalized_model.sav'
+# filename = 'balanced_model.sav'
 loaded_model = joblib.load(filename)
 
 # create route that renders index.html template
